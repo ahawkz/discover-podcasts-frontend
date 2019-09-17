@@ -1,3 +1,11 @@
+# discoverPods 
+An app that lets you browse podcasts and save them to a list to listen to later.
+
+## Live Link 
+https://discover-pods-frontend.herokuapp.com/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Notes from CRA 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
