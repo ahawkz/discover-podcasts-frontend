@@ -6,7 +6,7 @@ class Test extends React.Component {
     this.state = {message: ''}
   }
   componentDidMount(){
-    fetch('/test')
+    fetch('/api/test')
     .then(data => {
       return data.json()
     })
