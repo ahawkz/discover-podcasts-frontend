@@ -6,7 +6,7 @@ class Test extends React.Component {
     this.state = {message: ''}
   }
   componentDidMount(){
-    fetch('/api/test')
+    fetch('https://discover-podcasts.herokuapp.com/test')
     .then(data => {
       return data.json()
     })
@@ -23,8 +23,8 @@ class Test extends React.Component {
   render(){
     return(
       <div>
-        <h1>hello world</h1>
-        <h2> {this.state.message.message} </h2>
+        <h1>frontend test component</h1>
+        <h2> this is coming from my backend {this.state.message.message} </h2>
       </div>
     )
   }
