@@ -24,7 +24,7 @@ class Test extends React.Component {
     return(
       <div>
         <h1>frontend test component</h1>
-        <h2> this is coming from my backend {this.state.message.message} </h2>
+        <h2>this is coming from my backend {this.state.message.message} </h2>
       </div>
     )
   }
