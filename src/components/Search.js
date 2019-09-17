@@ -50,6 +50,11 @@ class Search extends React.Component {
             value="Find Podcast Info"
           />
         </form>
+        <div>
+          
+        </div>
+
+
         { (this.state.podcast) ? this.state.podcast.results[0].artistName : null }
       </React.Fragment>
     )
