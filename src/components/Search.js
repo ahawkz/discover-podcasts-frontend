@@ -21,7 +21,9 @@ class Search extends React.Component {
     this.setState({
       searchURL: this.state.baseURL + this.state.query + this.state.searchItem + this.state.entity
     }, () => {
-      fetch(this.state.searchURL)
+      fetch(this.state.searchURL, {
+        mode: "no-cors"
+      })
         .then(response => response.json())
         .then(json => {
           console.log(json)
