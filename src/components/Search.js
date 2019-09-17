@@ -22,7 +22,11 @@ class Search extends React.Component {
       searchURL: this.state.baseURL + this.state.query + this.state.podcastTitle + this.state.remainderURL
     }, () => {
       fetch(this.state.searchURL, {
+        method: 'GET',
+        withCredentials: true,
         headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
           'X-ListenAPI-Key': '92eeeea0eefc42ec8913d237dedca5da'
         }
       })
@@ -52,7 +56,7 @@ class Search extends React.Component {
             value="Find Podcast Info"
           />
         </form>
-        {this.state.searchURL}
+        {this.state.podcast.results[0]}
       </React.Fragment>
     )
   }
