@@ -5,9 +5,9 @@
     "node": "10.16.3",
     "npm": "6.11.3"
   },
-  "proxy": "https://discover-podcasts.herokuapp.com/",
   "private": true,
   "dependencies": {
+    "http-proxy-middleware": "^0.20.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
