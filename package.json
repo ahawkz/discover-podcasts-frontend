@@ -2,7 +2,8 @@
   "name": "discover-pods",
   "version": "0.1.0",
   "engines": {
-    "node": "10.16.3"
+    "node": "10.16.3",
+    "npm": "6.11.3"
   },
   "proxy": "https://discover-podcasts.herokuapp.com/",
   "private": true,
