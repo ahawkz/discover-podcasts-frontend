@@ -52,7 +52,7 @@ class Search extends React.Component {
         </form>
           { this.state.news ? <NewsInfo  news={this.state.news}/> : null
           }
-        <h4>this is telling me my data is still coming thru:</h4>
+        <h2>this is telling me my data is still coming thru:</h2>
         { this.state.news ? this.state.news[0].abstract : null }
       </React.Fragment>
     )
