@@ -4,67 +4,52 @@ class Search extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      baseURL: 'https://itunes.apple.com/search?',
-      query:'term=',
-      searchItem: '',
-      entity: '&entity=podcast',
-      searchURL: '',
+      baseURL: 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=',
+      query:'',
+      apiKey: '&api-key=wIQZ0P4jaNYlJvQG3atMu5bVXOmJtN0Y',
+      searchURL: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-  }
+  } //end constructor
   handleChange(event){
     this.setState({[event.target.id]: event.target.value})
   }
   handleSubmit (event) {
     event.preventDefault()
     this.setState({
-      searchURL: this.state.baseURL + this.state.query + this.state.searchItem + this.state.entity
+      searchURL: this.state.baseURL + this.state.query + this.state.apiKey
     }, () => {
-      fetch(this.state.searchURL, {
-        method: 'GET',
-        headers: {
-          "Access-Control-Allow-Origin":"https://discover-pods-frontend.herokuapp.com/",
-          "Content-Type": "application/json"
-        }
-      })
-        .then(response => {
-          console.log(response)
-          response.json()
-        })
-        .then(json => {
-          console.log(json)
+      fetch(this.state.searchURL)
+        .then(response => response.json())
+        .then(json =>
           this.setState(
           {
-            podcast: json,
-            searchItem: ''
+            news: json.response.docs,
+            query: ''
           }
-        )}, err => console.log(err))
+      ), err => console.error(err)
+    )
     })
   }
   render(){
     return(
       <React.Fragment>
-        <h1>discoverPods</h1>
+        <h1>discoverNews</h1>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor='searchItem'>Search</label>
+          <label htmlFor='query'>Search</label>
           <input
-            id='searchItem'
+            id='query'
             type='text'
-            value={this.state.searchItem}
+            value={this.state.query}
             onChange={this.handleChange}
           />
           <input
             type="submit"
-            value="Find Podcast Info"
+            value="Find Info"
           />
         </form>
-        <div>
-
-        </div>
-
-
-        { (this.state.podcast) ? this.state.podcast.results[0].artistName : null }
+        { this.state.news ? this.state.news[0].abstract : null }
       </React.Fragment>
     )
   }

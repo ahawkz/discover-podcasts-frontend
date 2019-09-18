@@ -6,19 +6,19 @@ class Test extends React.Component {
     this.state = {message: ''}
   }
   componentDidMount(){
-    fetch('https://discover-podcasts.herokuapp.com/test')
-    .then(data => {
-      return data.json()
-    })
-    .then(json => {
-      console.log(json)
-      this.setState({
-        message: json
-      })
-    })
-    .catch(error => {
-      console.log(error)
-    })
+    // fetch('https://discover-podcasts.herokuapp.com/test')
+    // .then(data => {
+    //   return data.json()
+    // })
+    // .then(json => {
+    //   console.log(json)
+    //   this.setState({
+    //     message: json
+    //   })
+    // })
+    // .catch(error => {
+    //   console.log(error)
+    // })
   }
   render(){
     return(
