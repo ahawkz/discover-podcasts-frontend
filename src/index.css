@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: ghostwhite;
 }
 
 code {
@@ -65,4 +66,20 @@ form input {
 
 .news-card {
   border: 1px solid black;
+}
+
+/* ====================== */
+/* ===== FOOTER.JS ====== */
+/* ====================== */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 1px 1px 1px gray;
 }

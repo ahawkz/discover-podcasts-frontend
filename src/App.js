@@ -3,6 +3,7 @@ import React from 'react';
 import Search from './components/Search.js';
 import  Header from './components/Header.js';
 import MyNews from './components/MyNews.js'
+import Footer from './components/Footer.js'
 
 
 // ==== COMPONENT CLASS ==== //
@@ -44,6 +45,7 @@ class App extends React.Component {
           view={this.state.view}
           handleView = {this.handleView}
           /> : < MyNews />}
+          <Footer/>
       </div>
     )
   }
