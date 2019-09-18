@@ -29,6 +29,13 @@ header a {
   text-decoration: none;
   color: black;
 }
+.views {
+  display: flex;
+  flex-direction: row;
+}
+.views h4 {
+  padding: 0 8px;
+}
 .social-icons{
   display: flex;
   flex-direction: row;

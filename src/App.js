@@ -1,9 +1,8 @@
 import React from 'react';
 // components
-import Test from './components/Test.js';
 import Search from './components/Search.js';
 import  Header from './components/Header.js';
-import MyNews from  './components/MyNews.js'
+import MyNews from './components/MyNews.js'
 
 
 // ==== COMPONENT CLASS ==== //
@@ -45,9 +44,6 @@ class App extends React.Component {
           view={this.state.view}
           handleView = {this.handleView}
           /> : < MyNews />}
-
-
-        < Test/>
       </div>
     )
   }
