@@ -24,7 +24,7 @@ class MyPods extends React.Component {
     return(
       <div>
         <h1>myPods</h1>
-        <h2>this is coming from my backend {this.state.title} </h2>
+        <h2>this is coming from my backend {this.state.message.message} </h2>
       </div>
     )
   }

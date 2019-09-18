@@ -1,4 +1,5 @@
 import React from 'react';
+import NewsInfo from  './NewsInfo.js'
 
 class Search extends React.Component {
   constructor(props){
@@ -49,6 +50,9 @@ class Search extends React.Component {
             value="Find Info"
           />
         </form>
+          { this.state.news ? <NewsInfo  news={this.state.news}/> : null
+          }
+        <h4>this is telling me my data is still coming thru:</h4>
         { this.state.news ? this.state.news[0].abstract : null }
       </React.Fragment>
     )
