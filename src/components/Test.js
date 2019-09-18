@@ -23,8 +23,8 @@ class Test extends React.Component {
   render(){
     return(
       <div>
-        <h1>frontend test component</h1>
-        <h2>this is coming from my backend {this.state.message.message} </h2>
+        <h6>frontend test component</h6>
+        <h6>this is coming from my backend {this.state.message.message} </h6>
       </div>
     )
   }
