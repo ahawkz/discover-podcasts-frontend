@@ -12,7 +12,10 @@ class Search extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-  } //end constructor
+  }
+  // ==============
+  // HANDLERS
+  // ==============
   handleChange(event){
     this.setState({[event.target.id]: event.target.value})
   }
@@ -33,6 +36,9 @@ class Search extends React.Component {
     )
     })
   }
+  // ==============
+  // RENDER
+  // ==============
   render(){
     return(
       <React.Fragment>
