@@ -21,7 +21,13 @@ class Search extends React.Component {
     this.setState({
       searchURL: this.state.baseURL + this.state.query + this.state.searchItem + this.state.entity
     }, () => {
-      fetch(this.state.searchURL)
+      fetch(this.state.searchURL, {
+        method: 'GET',
+        headers: {
+          "Access-Control-Allow-Origin":"https://discover-pods-frontend.herokuapp.com/",
+          "Content-Type": "application/json"
+        }
+      })
         .then(response => {
           console.log(response)
           response.json()
