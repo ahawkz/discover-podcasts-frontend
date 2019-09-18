@@ -36,24 +36,24 @@ class Search extends React.Component {
   render(){
     return(
       <React.Fragment>
-        <h1>discoverNews</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor='query'>Search</label>
-          <input
-            id='query'
-            type='text'
-            value={this.state.query}
-            onChange={this.handleChange}
-          />
-          <input
-            type="submit"
-            value="Find Info"
-          />
-        </form>
+        <div className="search-box">
+          <h1>discoverNews</h1>
+          <form onSubmit={this.handleSubmit}>
+            <label htmlFor='query'></label>
+            <input
+              id='query'
+              type='text'
+              value={this.state.query}
+              onChange={this.handleChange}
+            />
+            <input
+              type="submit"
+              value="Find Info"
+            />
+          </form>
           { this.state.news ? <NewsInfo  news={this.state.news}/> : null
           }
-        <h2>this is telling me my data is still coming thru:</h2>
-        { this.state.news ? this.state.news[0].abstract : null }
+        </div>
       </React.Fragment>
     )
   }
