@@ -1,6 +1,4 @@
 import React from 'react';
-import axios from "axios";
-
 
 class Search extends React.Component {
   constructor(props){
@@ -23,14 +21,19 @@ class Search extends React.Component {
     this.setState({
       searchURL: this.state.baseURL + this.state.query + this.state.searchItem + this.state.entity
     }, () => {
-      axios(this.state.searchURL)
-        .then(response => response.data)
-        .then((data) => {
-          this.setState({
-            podcast: data,
-            searchItem: ''
-          })
+      fetch(this.state.searchURL)
+        .then(response => {
+          console.log(response)
+          response.json()
         })
+        .then(json => {
+          console.log(json)
+          this.setState(
+          {
+            podcast: json,
+            searchItem: ''
+          }
+        )}, err => console.log(err))
     })
   }
   render(){
@@ -50,6 +53,11 @@ class Search extends React.Component {
             value="Find Podcast Info"
           />
         </form>
+        <div>
+
+        </div>
+
+
         { (this.state.podcast) ? this.state.podcast.results[0].artistName : null }
       </React.Fragment>
     )
