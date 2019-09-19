@@ -25,7 +25,7 @@ Make sure to run the backend and frontend on separate servers.
 
 ## Original wireframes
 ![Wireframe One](/wireframes/wireframe_1.png)
-![Wireframe Two](/wireframes/wireframe_2.png)
+![Wireframe Two](/wireframes/Wireframe_2.png)
 ![Wireframe Three](/wireframes/wireframe_3.png)
 
 ## Project Status
@@ -37,8 +37,9 @@ Future goals for this project are:
 - a component below the search bar that has blocks of news genres (politics, sports, etc) that the user clicks on, which takes you to a separate view with the top ten results of that genre.
 - adding images
 
+
+# Notes from initializing CRA:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Notes from CRA
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
