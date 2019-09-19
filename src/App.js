@@ -40,12 +40,14 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        < Header handleView={this.handleView}/>
-        { this.state.view.page === 'home' ? < Search
-          view={this.state.view}
-          handleView = {this.handleView}
-          /> : < MyNews />}
+        <div className="content-wrap">
+          < Header handleView={this.handleView}/>
+          { this.state.view.page === 'home' ? < Search
+            view={this.state.view}
+            handleView = {this.handleView}
+            /> : < MyNews />}
           <Footer/>
+        </div>
       </div>
     )
   }

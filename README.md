@@ -3,6 +3,7 @@ discoverNews is an application for searching through the news, provided by The N
 
 ## Live Link to Front End
 https://discover-pods-frontend.herokuapp.com/
+
 *You will notice the name of this app was originally discoverPods. We all pivot, sometimes. :)*
 
 ## Live Link to Back End and its respective repo  
