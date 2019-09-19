@@ -3,19 +3,20 @@ discoverNews is an application for searching through the news, provided by The N
 
 ## Live Link to Front End
 https://discover-pods-frontend.herokuapp.com/
-* You will notice the name of this app was originally discoverPods. We all pivot, sometimes. :)
+*You will notice the name of this app was originally discoverPods. We all pivot, sometimes. :)*
 
 ## Live Link to Back End and its respective repo  
 https://discover-podcasts.herokuapp.com/
+
 https://github.com/ahawkz/discover-podcasts
 
 ## Technologies Used
 MongoDB, Express, Node.JS, React, NYT API
 
 ## Installation
-Fork both repos and clone them to your local machine in separate directories.
-npm init
-Make sure to run the backend and frontend on separate servers.
+- Fork both repos and clone them to your local machine in separate directories.
+- npm init
+- Make sure to run the backend and frontend on separate servers.
 
 ## User Stories
 - User can search via the New York Times API for news based on search query (ex. Philadelphia loads top ten recent results regarding Philadelphia)
@@ -33,12 +34,13 @@ This project was created in September 2019. There are a few bugs that still need
 - ex
 - ex
 - ex
-Future goals for this project are:
+
+### Future goals for this project are:
 - a component below the search bar that has blocks of news genres (politics, sports, etc) that the user clicks on, which takes you to a separate view with the top ten results of that genre.
 - adding images
 
 
-# Notes from initializing CRA:
+## Notes from initializing CRA:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
