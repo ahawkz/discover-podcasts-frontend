@@ -71,7 +71,18 @@ form input {
 /* ====================== */
 
 .news-card {
+  margin: 10px auto;
   border: 1px solid black;
+  width: 80%;
+  padding: 20px;
+  box-shadow: 1px 1px 1px gray;
+  border-radius: 4px;
+  background-color: white;
+}
+.headline {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
 }
 
 /* ====================== */

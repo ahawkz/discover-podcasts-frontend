@@ -23,7 +23,7 @@ class NewsInfo extends React.Component {
         {this.props.news.map((item, key)  =>
           <div key={key} className="news-card">
             <h4>
-              <a href={item.web_url} target="_blank" rel="noopener noreferrer">
+              <a className="headline" href={item.web_url} target="_blank" rel="noopener noreferrer">
                 {item.headline.main}
               </a>
             </h4>
