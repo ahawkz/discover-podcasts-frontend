@@ -1,3 +1,4 @@
+
 /* ====================== */
 /* ===== APP.JS ====== */
 /* ====================== */
@@ -30,6 +31,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 10px;
+  font-family: 'Merriweather', serif;
+
 }
 header a {
   text-decoration: none;
@@ -42,12 +45,11 @@ header a {
 .views h4 {
   padding: 0 8px;
 }
-.social-icons{
+.date{
   display: flex;
   flex-direction: row;
-}
-.social-icons h6 {
-  padding: 0 10px;
+  align-self: center;
+  font-size: 13px;
 }
 
 /* ====================== */

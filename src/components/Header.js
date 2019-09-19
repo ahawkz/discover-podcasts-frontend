@@ -4,6 +4,8 @@ class Header extends React.Component {
   render(){
     return(
       <header>
+        <script src="https://kit.fontawesome.com/78abcb0c4d.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"/>
         <div className="views">
           <h4
             onClick={() => {
@@ -14,10 +16,8 @@ class Header extends React.Component {
               this.props.handleView('myNews')}}
           >myNews</h4>
         </div>
-        <div className="social-icons">
-          <a><h6>icon</h6></a>
-          <a><h6>icon</h6></a>
-          <a><h6>icon</h6></a>
+        <div className="date">
+          <div>{new Date().toDateString()}</div>
         </div>
       </header>
     )
