@@ -46,20 +46,24 @@ class Search extends React.Component {
     return(
       <React.Fragment>
         <div className="search-box">
-          <h1>discoverNews</h1>
-          <form onSubmit={this.handleSubmit}>
-            <label htmlFor='query'></label>
-            <input
-              id='query'
-              type='text'
-              value={this.state.query}
-              onChange={this.handleChange}
-            />
-            <input
-              type="submit"
-              value="Find Info"
-            />
-          </form>
+          <div className="search-header-input">
+            <h1 className="discover-news-header">discoverNews</h1>
+            <form onSubmit={this.handleSubmit}>
+              <label htmlFor='query'></label>
+              <input
+                id='query'
+                type='text'
+                value={this.state.query}
+                onChange={this.handleChange}
+                className="input-box"
+              />
+              <input
+                type="submit"
+                value="Find Info"
+                className="submit-button"
+              />
+            </form>
+          </div>
           { this.state.news ? <NewsInfo  news={this.state.news} /> : null
           }
         </div>
