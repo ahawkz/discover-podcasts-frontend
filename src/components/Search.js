@@ -64,9 +64,10 @@ class Search extends React.Component {
               />
             </form>
           </div>
-          { this.state.news ? <NewsInfo  news={this.state.news} /> : null
-          }
         </div>
+        { this.state.news ? <NewsInfo  news={this.state.news} /> : null
+        }
+
       </React.Fragment>
     )
   }
