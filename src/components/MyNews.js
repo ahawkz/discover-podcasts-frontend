@@ -1,6 +1,9 @@
 import React from 'react';
 
 class MyNews extends React.Component {
+  // ==============
+  // STATE
+  // ==============
   constructor(props){
     super(props)
     this.state = {
@@ -9,6 +12,30 @@ class MyNews extends React.Component {
       url: ''
     }
   }
+  // ==============
+  // HANDLERS
+  // ==============
+  handleDelete = (id) => {
+    fetch(`https://discover-podcasts.herokuapp.com/news/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(data => {
+        this.setState(prevState => {
+          const news = prevState.news.filter( news => news._id !== id)
+          console.log(id)
+          console.log(news);
+          return { news: news }
+        })
+      })
+      .catch(err => console.log(err))
+  }
+  // ==============
+  // LIFE CYCLES
+  // ==============
   componentDidMount(){
     fetch('https://discover-podcasts.herokuapp.com/news')
     .then(data => {
@@ -33,7 +60,11 @@ class MyNews extends React.Component {
             <h5>By {item.byline}</h5>
             <h6>Read More <a href={item.url} target="_blank" rel="noopener noreferrer">Here</a></h6>
             <div className="myNews-buttons">
-              <button>Delete</button>
+              <button onClick={() => {
+                this.handleDelete(item._id)
+                }}>
+                Delete
+              </button>
             </div>
           </div>
         ) : null}

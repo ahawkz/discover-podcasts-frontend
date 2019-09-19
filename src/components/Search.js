@@ -60,7 +60,7 @@ class Search extends React.Component {
               value="Find Info"
             />
           </form>
-          { this.state.news ? <NewsInfo  news={this.state.news}/> : null
+          { this.state.news ? <NewsInfo  news={this.state.news} /> : null
           }
         </div>
       </React.Fragment>
