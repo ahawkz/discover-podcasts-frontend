@@ -139,10 +139,16 @@ form input {
   margin: 0 auto;
 }
 .myNews-card {
-  border: 0.1px solid black;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border: 0.2px solid black;
+  /* border-radius: 2px; */
   background: white;
   box-shadow: 1px 1px 1px gray;
   padding: 0 10px;
+  margin: 10px 0;
+  font-family: 'Merriweather', serif;
 }
 .myNews-buttons {
   display: flex;
@@ -150,8 +156,19 @@ form input {
   justify-content: space-around;
   margin-bottom: 10px;
 }
-
-
+.delete{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: black;
+  width: 25px;
+}
+.delete:hover{
+  background-color: #03fcf8;
+  transition: 1s;
+  cursor: pointer;
+  border-radius: 2px;
+}
 /* ====================== */
 /* ===== FOOTER.JS ====== */
 /* ====================== */

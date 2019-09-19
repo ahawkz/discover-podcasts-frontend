@@ -57,13 +57,13 @@ class MyNews extends React.Component {
         { this.state.news ? this.state.news.map((item, key) =>
           <div key={key} className="myNews-card">
             <h4>{item.headline}</h4>
-            <h5>By {item.byline}</h5>
+            <h5>{item.byline}</h5>
             <h6>Read More <a href={item.url} target="_blank" rel="noopener noreferrer">Here</a></h6>
             <div className="myNews-buttons">
-              <button onClick={() => {
+              <button className="delete" onClick={() => {
                 this.handleDelete(item._id)
                 }}>
-                Delete
+                X
               </button>
             </div>
           </div>
