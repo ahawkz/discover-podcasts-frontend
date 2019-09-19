@@ -14,11 +14,11 @@ class Header extends React.Component {
               this.props.handleView('myNews')}}
           >myNews</h4>
         </div>
-        <div className="social-icons">
-          <a href=""><h6>icon</h6></a>
-          <a href=""><h6>icon</h6></a>
-          <a href=""><h6>icon</h6></a>
-        </div>
+        {/*<div className="social-icons">
+          <a><h6>icon</h6></a>
+          <a><h6>icon</h6></a>
+          <a><h6>icon</h6></a>
+        </div> */}
       </header>
     )
   }

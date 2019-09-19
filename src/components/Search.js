@@ -2,6 +2,9 @@ import React from 'react';
 import NewsInfo from  './NewsInfo.js'
 
 class Search extends React.Component {
+  // ==============
+  // STATE
+  // ==============
   constructor(props){
     super(props)
     this.state = {

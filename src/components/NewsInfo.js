@@ -1,6 +1,22 @@
 import React from 'react';
 
 class NewsInfo extends React.Component {
+  handleCreate = (createData) => {
+    console.log(createData)
+    fetch('https://discover-podcasts.herokuapp.com/news', {
+      body: JSON.stringify(createData),
+      method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+      }
+    })
+      .then(createdNews => {
+        console.log(createdNews);
+        return createdNews.json()
+      })
+      .catch(err => console.log(err))
+  }
   render() {
     return (
       <div className="news-section">
@@ -12,7 +28,18 @@ class NewsInfo extends React.Component {
               </a>
             </h4>
             <h5>{item.byline.original}</h5>
-            <button>Save</button>
+            <button
+              onClick={() => {
+                this.handleCreate(
+                  {
+                    headline: item.headline.main,
+                    byline: item.byline.original ,
+                    url: item.web_url
+                  }
+                )
+              }}>
+              Save
+            </button>
           </div>
         )}
       </div>

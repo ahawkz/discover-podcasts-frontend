@@ -12,11 +12,9 @@ class MyNews extends React.Component {
   componentDidMount(){
     fetch('https://discover-podcasts.herokuapp.com/news')
     .then(data => {
-      console.log(data);
       return data.json()
     })
     .then(json => {
-      console.log(json)
       this.setState({
         news: json
       })
