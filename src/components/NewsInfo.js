@@ -2,7 +2,6 @@ import React from 'react';
 
 class NewsInfo extends React.Component {
   render() {
-    // console.log(this.props.news[0].multimedia[0].url)
     return (
       <div className="news-section">
         {this.props.news.map((item, key)  =>
@@ -13,6 +12,7 @@ class NewsInfo extends React.Component {
               </a>
             </h4>
             <h5>{item.byline.original}</h5>
+            <button>Save</button>
           </div>
         )}
       </div>

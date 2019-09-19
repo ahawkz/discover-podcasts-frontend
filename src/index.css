@@ -61,12 +61,38 @@ form input {
 }
 
 /* ====================== */
-/* ===== NEWSINFO.JS ====== */
+/* ===== NEWSINFO.JS ==== */
 /* ====================== */
 
 .news-card {
   border: 1px solid black;
 }
+
+
+/* ====================== */
+/* ===== MYNEWS.JS ====== */
+/* ====================== */
+
+.my-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.myNews-card {
+  border: 0.1px solid black;
+  background: white;
+  box-shadow: 1px 1px 1px gray;
+  padding: 0 10px;
+}
+.myNews-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
 
 /* ====================== */
 /* ===== FOOTER.JS ====== */
