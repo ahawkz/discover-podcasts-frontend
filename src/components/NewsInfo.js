@@ -1,4 +1,6 @@
 import React from 'react';
+const dateFormat = require('dateformat');
+
 
 class NewsInfo extends React.Component {
   handleCreate = (createData) => {
@@ -28,6 +30,7 @@ class NewsInfo extends React.Component {
               </a>
             </h4>
             <h5>{item.byline.original}</h5>
+            <h5> {dateFormat(item.pub_date, "dddd, mmmm dS, yyyy")}</h5>
             <button
               onClick={() => {
                 this.handleCreate(

@@ -31,14 +31,13 @@ MongoDB, Express, Node.JS, React, NYT API
 ![Wireframe Three](/wireframes/wireframe_3.png)
 
 ## Project Status
-This project was created in September 2019. There are a few bugs that still need to be fixed, including:
-- ex
-- ex
-- ex
+This project was created in September 2019.
 
 ### Future goals for this project are:
 - a component below the search bar that has blocks of news genres (politics, sports, etc) that the user clicks on, which takes you to a separate view with the top ten results of that genre.
-- adding images
+- adding images to results
+- add more CSS styling
+- have results load in chronological order
 
 
 ## Notes from initializing CRA:

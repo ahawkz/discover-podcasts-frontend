@@ -7,13 +7,11 @@
   },
   "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
-    "bulma": "^0.7.5",
+    "dateformat": "^3.0.3",
     "http-proxy-middleware": "^0.20.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "unirest": "^0.6.0"
+    "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
