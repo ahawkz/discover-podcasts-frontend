@@ -51,6 +51,11 @@ header a {
   align-self: center;
   font-size: 13px;
 }
+.header-nav:hover{
+  color: red;
+  transition: 0.5s;
+  cursor: pointer;
+}
 
 /* ====================== */
 /* ===== SEARCH.JS ====== */

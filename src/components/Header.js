@@ -8,10 +8,12 @@ class Header extends React.Component {
         <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"/>
         <div className="views">
           <h4
+            className="header-nav"
             onClick={() => {
               this.props.handleView('home')}}
           >home</h4>
           <h4
+            className="header-nav"
             onClick={() => {
               this.props.handleView('myNews')}}
           >myNews</h4>
