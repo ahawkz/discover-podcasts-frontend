@@ -120,11 +120,29 @@ form input {
   box-shadow: 1px 1px 1px gray;
   border-radius: 4px;
   background-color: white;
+  font-family: 'Merriweather', serif;
+  text-align: center;
 }
 .headline {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+}
+.save{
+  color: black;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px black;
+}
+.save:hover{
+  background-color: #03fcf8;
+  transition: 1s;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.save:focus{
+  outline: none;
 }
 
 /* ====================== */

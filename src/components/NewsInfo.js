@@ -35,6 +35,7 @@ class NewsInfo extends React.Component {
             <h5>{item.byline.original}</h5>
             <h5> {dateFormat(item.pub_date, "dddd, mmmm dS, yyyy")}</h5>
             <button
+              className="save"
               onClick={() => {
                 this.handleCreate(
                   {
@@ -45,7 +46,7 @@ class NewsInfo extends React.Component {
                 )
                 this.displaySavedMessage()
               }}>
-              Save
+              SAVE
             </button>
           </div>
         )}
