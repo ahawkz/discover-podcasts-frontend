@@ -38,6 +38,7 @@ This project was created in September 2019.
 - adding images to results
 - add more CSS styling
 - have results load in chronological order
+- are results only loading article titles with query in them?
 
 
 ## Notes from initializing CRA:

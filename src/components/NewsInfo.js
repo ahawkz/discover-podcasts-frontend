@@ -3,6 +3,9 @@ const dateFormat = require('dateformat');
 
 
 class NewsInfo extends React.Component {
+  displaySavedMessage  = () => {
+    alert('saved!')
+  }
   handleCreate = (createData) => {
     console.log(createData)
     fetch('https://discover-podcasts.herokuapp.com/news', {
@@ -40,6 +43,7 @@ class NewsInfo extends React.Component {
                     url: item.web_url
                   }
                 )
+                this.displaySavedMessage()
               }}>
               Save
             </button>
