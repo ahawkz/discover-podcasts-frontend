@@ -58,7 +58,7 @@ class MyNews extends React.Component {
           <div key={key} className="myNews-card">
             <h4>{item.headline}</h4>
             <h5>{item.byline}</h5>
-            <h6>Read More <a href={item.url} target="_blank" rel="noopener noreferrer">Here</a></h6>
+            <h6 className="read-more">Read More <a href={item.url} target="_blank" rel="noopener noreferrer">Here</a></h6>
             <div className="myNews-buttons">
               <button className="delete" onClick={() => {
                 this.handleDelete(item._id)

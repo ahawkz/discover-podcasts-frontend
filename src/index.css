@@ -192,6 +192,15 @@ form input {
   cursor: pointer;
   border-radius: 2px;
 }
+.read-more a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.read-more a:hover{
+  color: red;
+  cursor: pointer;
+}
 /* ====================== */
 /* ===== FOOTER.JS ====== */
 /* ====================== */
