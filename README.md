@@ -39,6 +39,7 @@ This project was created in September 2019.
 - add more CSS styling
 - have results load in chronological order
 - are results only loading article titles with query in them?
+- display date on myNews card (need to edit this in the database as well)
 
 
 ## Notes from initializing CRA:
